@@ -1,0 +1,31 @@
+{
+  "name": "@geckos.io/phaser-on-nodejs",
+  "version": "0.0.0",
+  "description": "Allows you to run Phaser 3 game (including Phaser's physics engines) on Node.js.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "tsc --build tsconfig.json"
+  },
+  "author": "Yannick Deubel (https://github.com/yandeu)",
+  "license": "MIT",
+  "keywords": [
+    "phaser",
+    "node",
+    "nodejs",
+    "multiplayer",
+    "game",
+    "physics",
+    "arcade",
+    "matter"
+  ],
+  "dependencies": {
+    "canvas": "^2.4.1",
+    "jsdom": "^15.0.0"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^12.2.3",
+    "@types/node": "^11.13.8",
+    "typescript": "^3.4.5"
+  }
+}
