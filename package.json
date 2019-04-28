@@ -27,5 +27,16 @@
     "@types/jsdom": "^12.2.3",
     "@types/node": "^11.13.8",
     "typescript": "^3.4.5"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geckosio/phaser-on-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/geckosio/phaser-on-nodejs/issues"
+  },
+  "homepage": "https://github.com/geckosio/phaser-on-nodejs#readme"
 }
