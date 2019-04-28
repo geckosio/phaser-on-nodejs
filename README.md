@@ -6,11 +6,11 @@
   <br>
 </h1>
 
-<h4 align="center">
-Allows you to run Phaser 3 game (including Phaser's physics engines) on Node.js.
-</h4>
+#### Allows you to run Phaser 3 games (including Phaser's physics engines) on Node.js.
 
----
+![David](https://img.shields.io/david/geckosio/phaser-on-nodejs.svg?style=flat-square)
+![npm](https://img.shields.io/npm/v/@geckos.io/phaser-on-nodejs.svg?style=flat-square)
+![NPM](https://img.shields.io/npm/l/@geckos.io/phaser-on-nodejs.svg?style=flat-square)
 
 ## Install
 
@@ -28,4 +28,5 @@ import('@geckos.io/phaser-on-nodejs')
 
 ## Examples
 
-- [Phaser 3 Multiplayer Game Example](https://github.com/geckosio/phaser3-multiplayer-game-example)
+- [Phaser 3 - Multiplayer game example with geckos.io](https://github.com/geckosio/phaser3-multiplayer-game-example#readme)
+- [Phaser 3 - Multiplayer game with physics](https://github.com/yandeu/phaser3-multiplayer-with-physics#readme)
