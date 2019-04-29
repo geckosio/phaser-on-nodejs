@@ -30,3 +30,7 @@ import('@geckos.io/phaser-on-nodejs')
 
 - [Phaser 3 - Multiplayer game example with geckos.io](https://github.com/geckosio/phaser3-multiplayer-game-example#readme)
 - [Phaser 3 - Multiplayer game with physics](https://github.com/yandeu/phaser3-multiplayer-with-physics#readme)
+
+## Compatible Phaser versions
+
+For now, it has not been tested with Phaser 2, but it works well with Phaser 3.
