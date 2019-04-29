@@ -31,6 +31,27 @@ import('@geckos.io/phaser-on-nodejs')
 - [Phaser 3 - Multiplayer game example with geckos.io](https://github.com/geckosio/phaser3-multiplayer-game-example#readme)
 - [Phaser 3 - Multiplayer game with physics](https://github.com/yandeu/phaser3-multiplayer-with-physics#readme)
 
+## Limitations and differences
+
+- You can't have multiple scenes on the server. But this is usually not required anyways. If you want to use multiple scene, just spin up multiple Phaser instances.
+- Use Phaser in headless mode on the server `{ type: Phaser.HEADLESS }`:
+- Since you do not load any assets on the server, Phaser does not know the size of you images. You have to add it manually like so:
+
+```js
+class Player extends Phaser.Physics.Arcade.Sprite {
+  constructor(scene, x, y) {
+    // pass empty string for the texture
+    super(scene, x, y, '')
+
+    scene.add.existing(this)
+    scene.physics.add.existing(this)
+
+    // set the width and height of the sprite as the body size
+    this.body.setSize(32, 48)
+  }
+}
+```
+
 ## Compatible Phaser versions
 
 For now, it has not been tested with Phaser 2, but it works well with Phaser 3.
