@@ -7,6 +7,7 @@ declare global {
       navigator: any
       XMLHttpRequest: any
       HTMLCanvasElement: any
+      HTMLVideoElement: any
       requestAnimationFrame: any
     }
   }
@@ -27,6 +28,7 @@ global.window.Element = undefined
 global.navigator = { userAgent: 'node' }
 global.XMLHttpRequest = function() {}
 global.HTMLCanvasElement = window.HTMLCanvasElement
+global.HTMLVideoElement = window.HTMLVideoElement
 window.focus = () => {}
 
 const animationFrame = (cb: any) => {
