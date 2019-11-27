@@ -23,7 +23,7 @@ npm install @geckos.io/phaser-on-nodejs
 ```js
 require('@geckos.io/phaser-on-nodejs')
 // or with es6
-import('@geckos.io/phaser-on-nodejs')
+import '@geckos.io/phaser-on-nodejs'
 ```
 
 ## Examples
@@ -35,7 +35,24 @@ import('@geckos.io/phaser-on-nodejs')
 
 - You can't have multiple scenes on the server. But this is usually not required anyways. If you want to use multiple scene, just spin up multiple Phaser instances.
 - Use Phaser in headless mode on the server `{ type: Phaser.HEADLESS }`:
-- Since you do not load any assets on the server, Phaser does not know the size of you images. You have to add it manually like so:
+
+```js
+const config = {
+  type: Phaser.HEADLESS,
+  width: 1280,
+  height: 720,
+  banner: false,
+  audio: false,
+  scene: [GameScene],
+  physics: {
+    default: 'arcade',
+    arcade: {
+      gravity: { y: 1200 }
+    }
+  }
+}
+```
+- Since you do not (and can't) load any assets on the server, Phaser does not know the size of you images. You have to add it manually like so:
 
 ```js
 class Player extends Phaser.Physics.Arcade.Sprite {
