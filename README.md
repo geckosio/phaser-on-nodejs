@@ -8,6 +8,7 @@
 
 #### Allows you to run Phaser 3 games (including Phaser's physics engines) on Node.js.
 
+[![Github Workflow](https://img.shields.io/github/workflow/status/geckosio/phaser-on-nodejs/CI/master?label=github%20build&logo=github&style=flat-square)](https://github.com/geckosio/phaser-on-nodejs/actions?query=workflow%3ACI)
 [![David](https://img.shields.io/david/geckosio/phaser-on-nodejs.svg?style=flat-square)](https://david-dm.org/geckosio/phaser-on-nodejs)
 [![npm](https://img.shields.io/npm/v/@geckos.io/phaser-on-nodejs.svg?style=flat-square)](https://www.npmjs.com/package/@geckos.io/phaser-on-nodejs)
 [![NPM](https://img.shields.io/npm/l/@geckos.io/phaser-on-nodejs.svg?style=flat-square)](LICENSE)

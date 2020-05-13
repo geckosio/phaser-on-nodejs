@@ -4,12 +4,14 @@
   "description": "Allows you to run Phaser 3 games (including Phaser's physics engines) on Node.js.",
   "main": "lib/index.js",
   "scripts": {
-    "prepublishOnly": "npm run tsc:build",
     "start": "npm run dev",
+    "build": "npm run tsc:build",
     "dev": "npm-run-all --parallel nodemon",
+    "test": "node test/test.js",
     "tsc:build": "tsc",
     "tsc:watch": "tsc --watch",
-    "nodemon": "nodemon test/test.js"
+    "nodemon": "nodemon test/test.js",
+    "prepublishOnly": "npm run build"
   },
   "author": "Yannick Deubel (https://github.com/yandeu)",
   "license": "MIT",
