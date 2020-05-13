@@ -12,6 +12,7 @@ declare global {
     }
   }
 }
+
 import Canvas from 'canvas'
 import jsdom from 'jsdom'
 
