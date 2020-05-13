@@ -43,15 +43,16 @@ const config = {
   height: 720,
   banner: false,
   audio: false,
-  scene: [GameScene],
+  scene: [MainScene],
   physics: {
     default: 'arcade',
     arcade: {
-      gravity: { y: 1200 }
-    }
-  }
+      gravity: { y: 1200 },
+    },
+  },
 }
 ```
+
 - Since you do not (and can't) load any assets on the server, Phaser does not know the size of you images. You have to add it manually like so:
 
 ```js
