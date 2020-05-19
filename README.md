@@ -38,6 +38,11 @@ import '@geckos.io/phaser-on-nodejs'
 - Use Phaser in headless mode on the server `{ type: Phaser.HEADLESS }`:
 
 ```js
+// set the fps you need
+const FPS = 30
+global.phaserOnNodeFPS = FPS
+
+// prepare the config for Phaser
 const config = {
   type: Phaser.HEADLESS,
   width: 1280,
@@ -45,6 +50,9 @@ const config = {
   banner: false,
   audio: false,
   scene: [MainScene],
+  fps: {
+    target: FPS,
+  },
   physics: {
     default: 'arcade',
     arcade: {

@@ -9,6 +9,7 @@ declare global {
       HTMLCanvasElement: any
       HTMLVideoElement: any
       requestAnimationFrame: any
+      phaserOnNodeFPS: number
     }
   }
 }
@@ -32,9 +33,12 @@ global.HTMLCanvasElement = window.HTMLCanvasElement
 global.HTMLVideoElement = window.HTMLVideoElement
 window.focus = () => {}
 
+// phaser on node variables
+global.phaserOnNodeFPS = 60
+
 const animationFrame = (cb: any) => {
   if (typeof cb !== 'function') return 0 // this line saves a lot of cpu
-  window.setTimeout(() => cb(0), 1000 / 60)
+  window.setTimeout(() => cb(0), 1000 / global.phaserOnNodeFPS)
   return 0
 }
 

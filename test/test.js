@@ -1,6 +1,9 @@
 require('../lib/index.js')
 const Phaser = require('phaser')
 
+const FPS = 30
+global.phaserOnNodeFPS = FPS
+
 it('should render without errors', done => {
   class Player extends Phaser.Physics.Arcade.Sprite {
     constructor(scene, x, y) {
@@ -45,6 +48,9 @@ it('should render without errors', done => {
     banner: false,
     audio: false,
     scene: [MainScene],
+    fps: {
+      target: FPS,
+    },
     physics: {
       default: 'arcade',
       arcade: {

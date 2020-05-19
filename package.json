@@ -6,11 +6,11 @@
   "scripts": {
     "start": "npm run dev",
     "build": "npm run tsc:build",
-    "dev": "npm-run-all --parallel nodemon",
+    "dev": "npm-run-all --parallel tsc:watch nodemon",
     "test": "jest",
     "tsc:build": "tsc",
     "tsc:watch": "tsc --watch",
-    "nodemon": "nodemon test/test.js",
+    "nodemon": "nodemon --watch dev --watch lib --watch src dev/dev.js",
     "prepublishOnly": "npm run build"
   },
   "author": "Yannick Deubel (https://github.com/yandeu)",
