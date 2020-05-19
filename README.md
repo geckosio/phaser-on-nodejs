@@ -29,6 +29,13 @@ require('@geckos.io/phaser-on-nodejs')
 import '@geckos.io/phaser-on-nodejs'
 ```
 
+## Features
+
+- Phaser Physics (Arcade and Matter)
+- Load Images and SpriteSheets
+- Load TileMaps
+- Adjustable frame rate
+
 ## Examples
 
 - [Phaser 3 - Multiplayer game example with geckos.io](https://github.com/geckosio/phaser3-multiplayer-game-example#readme)
