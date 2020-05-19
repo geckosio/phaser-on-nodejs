@@ -9,6 +9,7 @@ declare global {
       HTMLCanvasElement: any
       HTMLVideoElement: any
       requestAnimationFrame: any
+      URL: any
       phaserOnNodeFPS: number
     }
   }
@@ -16,22 +17,27 @@ declare global {
 
 import Canvas from 'canvas'
 import jsdom from 'jsdom'
+import { FakeXMLHttpRequest } from './FakeXMLHttpRequest'
 
 const { JSDOM } = jsdom
 const dom = new JSDOM(`<!DOCTYPE html><body></body>`)
 
-let document = dom.window.document
-let window = dom.window
+const document = dom.window.document
+const window = dom.window
+window.focus = () => {}
 
 global.document = document
 global.window = window
 global.Image = Canvas.Image
 global.window.Element = undefined
 global.navigator = { userAgent: 'node' }
-global.XMLHttpRequest = function() {}
+global.XMLHttpRequest = FakeXMLHttpRequest
 global.HTMLCanvasElement = window.HTMLCanvasElement
 global.HTMLVideoElement = window.HTMLVideoElement
-window.focus = () => {}
+
+global.URL = () => {}
+global.URL.createObjectURL = (base64: any) => `data:image/png;base64,${base64}`
+global.URL.revokeObjectURL = () => {}
 
 // phaser on node variables
 global.phaserOnNodeFPS = 60

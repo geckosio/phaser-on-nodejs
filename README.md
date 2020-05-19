@@ -62,7 +62,7 @@ const config = {
 }
 ```
 
-- Since you do not (and can't) load any assets on the server, Phaser does not know the size of you images. You have to add it manually like so:
+- You can load textures (images, spritesheets etc.) on the server, if you use a relative path. But to save memory, I recommend the following approach:
 
 ```js
 class Player extends Phaser.Physics.Arcade.Sprite {
