@@ -7,7 +7,7 @@
     "start": "npm run dev",
     "build": "npm run tsc:build",
     "dev": "npm-run-all --parallel tsc:watch nodemon",
-    "test": "jest --runInBand",
+    "test": "jest",
     "tsc:build": "tsc",
     "tsc:watch": "tsc --watch",
     "nodemon": "nodemon --watch dev --watch lib --watch src dev/dev.js",
