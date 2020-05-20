@@ -1,4 +1,5 @@
 require('../lib/index.js')
+require('./globalMock')
 const Phaser = require('phaser')
 const StartTest = require('./startTest')
 
