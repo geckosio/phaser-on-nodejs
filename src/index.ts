@@ -47,7 +47,11 @@ const animationFrame = (cb: any) => {
   window.setTimeout(() => cb(0), 1000 / global.phaserOnNodeFPS)
   return 0
 }
+export { animationFrame }
 
 window.requestAnimationFrame = cb => {
   return animationFrame(cb)
 }
+
+const requestAnimationFrame = window.requestAnimationFrame
+export { requestAnimationFrame }
