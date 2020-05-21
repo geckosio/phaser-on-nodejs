@@ -16,6 +16,7 @@
 [![David](https://img.shields.io/david/geckosio/phaser-on-nodejs.svg?style=flat-square)](https://david-dm.org/geckosio/phaser-on-nodejs)
 [![npm](https://img.shields.io/npm/v/@geckos.io/phaser-on-nodejs.svg?style=flat-square)](https://www.npmjs.com/package/@geckos.io/phaser-on-nodejs)
 [![NPM](https://img.shields.io/npm/l/@geckos.io/phaser-on-nodejs.svg?style=flat-square)](LICENSE)
+[![Codecov](https://img.shields.io/codecov/c/github/geckosio/phaser-on-nodejs?logo=codecov&style=flat-square)](https://codecov.io/gh/geckosio/phaser-on-nodejs)
 
 </div>
 
