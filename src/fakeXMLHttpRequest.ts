@@ -1,7 +1,7 @@
 import path from 'path'
 import fs from 'fs'
 
-export class FakeXMLHttpRequest {
+class FakeXMLHttpRequest {
   public url: string
   public status = 200
   public response: any
@@ -27,3 +27,5 @@ export class FakeXMLHttpRequest {
   public onerror(err: NodeJS.ErrnoException | null) {}
   public onprogress() {}
 }
+
+export default FakeXMLHttpRequest

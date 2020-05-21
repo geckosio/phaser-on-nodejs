@@ -17,7 +17,7 @@ declare global {
 
 import Canvas from 'canvas'
 import jsdom from 'jsdom'
-import { FakeXMLHttpRequest } from './FakeXMLHttpRequest'
+import FakeXMLHttpRequest from './fakeXMLHttpRequest'
 
 const { JSDOM } = jsdom
 const dom = new JSDOM(`<!DOCTYPE html><body></body>`)
