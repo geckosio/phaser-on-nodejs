@@ -1,16 +1,12 @@
 <div align="center">
 
-<h1>
-  <br>
-  <a href="https://github.com/yandeu/phaser3-multiplayer-with-physics#readme"><img src="readme/phaser-on-nodejs.png" alt="header" width="400"></a>
-  <br>
-  Phaser on Node.js
-  <br>
-</h1>
+<a href="https://github.com/yandeu/phaser3-multiplayer-with-physics#readme">
+<img src="readme/phaser-on-nodejs.png" alt="logo" width="400">
+</a>
 
-<h4>
-  Allows you to run Phaser 3 games (including Phaser's physics engines) on Node.js.
-<h4>
+# Phaser on Node.js
+
+### Allows you to run Phaser 3 games (including Phaser's physics engines) on Node.js.
 
 [![Github Workflow](https://img.shields.io/github/workflow/status/geckosio/phaser-on-nodejs/CI/master?label=github%20build&logo=github&style=flat-square)](https://github.com/geckosio/phaser-on-nodejs/actions?query=workflow%3ACI)
 [![David](https://img.shields.io/david/geckosio/phaser-on-nodejs.svg?style=flat-square)](https://david-dm.org/geckosio/phaser-on-nodejs)
