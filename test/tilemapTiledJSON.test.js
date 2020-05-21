@@ -38,5 +38,5 @@ it('player should collide with the tile map', done => {
     }
   }
 
-  StartTest(MainScene)
+  StartTest([MainScene])
 })

@@ -1,11 +1,11 @@
-const StartGame = MainScene => {
+const StartGame = Scenes => {
   const config = {
     type: Phaser.HEADLESS,
     width: 1280,
     height: 720,
     banner: false,
     audio: false,
-    scene: [MainScene],
+    scene: Scenes,
     physics: {
       default: 'arcade',
       arcade: {

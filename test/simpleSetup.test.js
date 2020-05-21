@@ -27,5 +27,5 @@ it('should render without errors', done => {
     }
   }
 
-  StartTest(MainScene)
+  StartTest([MainScene])
 })

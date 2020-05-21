@@ -16,5 +16,5 @@ it('should multiply to 528 (24*22)', done => {
     }
   }
 
-  StartTest(MainScene)
+  StartTest([MainScene])
 })

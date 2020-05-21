@@ -34,7 +34,8 @@ import '@geckos.io/phaser-on-nodejs'
 - Phaser Physics (Arcade and Matter)
 - Load Images and SpriteSheets
 - Load TileMaps
-- Adjustable frame rate
+- Adjustable Frame Rate
+- Allows to use Multiple Scenes
 
 ## Examples
 
@@ -43,8 +44,9 @@ import '@geckos.io/phaser-on-nodejs'
 
 ## Limitations and differences
 
-- You can't have multiple scenes on the server. But this is usually not required anyways. If you want to use multiple scene, just spin up multiple Phaser instances.
-- Use Phaser in headless mode on the server `{ type: Phaser.HEADLESS }`:
+### Setup
+
+Use Phaser in headless mode on the server `{ type: Phaser.HEADLESS }`:
 
 ```js
 // set the fps you need
@@ -71,10 +73,25 @@ const config = {
 }
 ```
 
-- You can load textures (images, spritesheets etc.) on the server, if you use a relative path. But to save memory, I recommend the following approach:
+### Loading Assets
+
+You can load textures (images, spritesheets etc.) on the server.
 
 ```js
-class Player extends Phaser.Physics.Arcade.Sprite {
+preload() {
+  // use a relative path
+  this.load.image('star', '../assets/star.png')
+}
+
+create() {
+  const star = this.physics.add.sprite(400, 300, 'star')
+}
+```
+
+But to save some memory, I recommend the following approach instead:
+
+```js
+class Star extends Phaser.Physics.Arcade.Sprite {
   constructor(scene, x, y) {
     // pass empty string for the texture
     super(scene, x, y, '')
@@ -83,7 +100,7 @@ class Player extends Phaser.Physics.Arcade.Sprite {
     scene.physics.add.existing(this)
 
     // set the width and height of the sprite as the body size
-    this.body.setSize(32, 48)
+    this.body.setSize(24, 22)
   }
 }
 ```

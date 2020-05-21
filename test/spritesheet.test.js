@@ -19,5 +19,5 @@ it('should multiply to 1536 (32*48)', done => {
     }
   }
 
-  StartTest(MainScene)
+  StartTest([MainScene])
 })
