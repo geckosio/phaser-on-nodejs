@@ -43,16 +43,27 @@ import '@geckos.io/phaser-on-nodejs'
 - [Phaser 3 - Multiplayer game example with geckos.io](https://github.com/geckosio/phaser3-multiplayer-game-example#readme)
 - [Phaser 3 - Multiplayer game with physics](https://github.com/yandeu/phaser3-multiplayer-with-physics#readme)
 
-## Limitations and differences
+## Basic Setup
 
-### Setup
-
-Use Phaser in headless mode on the server `{ type: Phaser.HEADLESS }`:
+Install and require `phaser` and `@geckos.io/phaser-on-nodejs`. Make sure you use Phaser in headless mode on the server `{ type: Phaser.HEADLESS }`
 
 ```js
+require('@geckos.io/phaser-on-nodejs')
+const Phaser = require('phaser')
+
 // set the fps you need
 const FPS = 30
-global.phaserOnNodeFPS = FPS
+global.phaserOnNodeFPS = FPS // default is 60
+
+// your MainScene
+class MainScene extends Phaser.Scene {
+  constructor() {
+    super('MainScene')
+  }
+  create() {
+    console.log('it works!')
+  }
+}
 
 // prepare the config for Phaser
 const config = {
@@ -72,9 +83,12 @@ const config = {
     },
   },
 }
+
+// start the game
+new Phaser.Game(config)
 ```
 
-### Loading Assets
+## Loading Assets
 
 You can load textures (images, spritesheets etc.) on the server.
 

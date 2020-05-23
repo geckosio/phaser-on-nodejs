@@ -3,7 +3,7 @@ require('./globalMock')
 const Phaser = require('phaser')
 const StartTest = require('./startTest')
 
-it('should render without errors', done => {
+it('body size should be 32 * 48 (1536)', done => {
   class Player extends Phaser.Physics.Arcade.Sprite {
     constructor(scene, x, y) {
       // pass empty string for the texture
@@ -23,6 +23,7 @@ it('should render without errors', done => {
     }
 
     update(time, delta) {
+      expect(this.player.body.width * this.player.body.height).toBe(1536)
       done()
     }
   }
