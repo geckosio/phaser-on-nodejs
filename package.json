@@ -48,5 +48,8 @@
   "bugs": {
     "url": "https://github.com/geckosio/phaser-on-nodejs/issues"
   },
-  "homepage": "https://github.com/geckosio/phaser-on-nodejs#readme"
+  "homepage": "https://github.com/geckosio/phaser-on-nodejs#readme",
+  "funding": {
+    "url": "https://github.com/sponsors/yandeu"
+  }
 }
