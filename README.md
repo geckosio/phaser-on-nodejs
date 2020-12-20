@@ -16,6 +16,10 @@
 
 </div>
 
+## Important
+
+**Does not work with Phaser >= 3.50.0 yet, since there is a bug in Phaser 3.50.0!**
+
 ## Install
 
 ```console
@@ -74,14 +78,14 @@ const config = {
   audio: false,
   scene: [MainScene],
   fps: {
-    target: FPS,
+    target: FPS
   },
   physics: {
     default: 'arcade',
     arcade: {
-      gravity: { y: 300 },
-    },
-  },
+      gravity: { y: 300 }
+    }
+  }
 }
 
 // start the game
