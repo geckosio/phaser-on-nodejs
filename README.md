@@ -20,6 +20,8 @@
 
 **Does not work with Phaser >= 3.50.0 yet, since there is a bug in Phaser 3.50.0!**
 
+**Does not work on Node.js 15. Use Node.js 14 LTS instead.**
+
 ## Install
 
 ```console
