@@ -46,6 +46,7 @@ import '@geckos.io/phaser-on-nodejs'
 
 ## Examples
 
+- [Simple Phaser on Node.js example](https://github.com/geckosio/phaser-on-nodejs-example)
 - [Phaser 3 - Multiplayer game example with geckos.io](https://github.com/geckosio/phaser3-multiplayer-game-example#readme)
 - [Phaser 3 - Multiplayer game with physics](https://github.com/yandeu/phaser3-multiplayer-with-physics#readme)
 
