@@ -46,14 +46,14 @@ const config = {
   audio: false,
   scene: [MainScene],
   fps: {
-    target: FPS,
+    target: FPS
   },
   physics: {
     default: 'arcade',
     arcade: {
-      gravity: { y: 1200 },
-    },
-  },
+      gravity: { y: 1200 }
+    }
+  }
 }
 
 new Phaser.Game(config)

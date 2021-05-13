@@ -7,10 +7,12 @@
     "start": "npm run dev",
     "build": "npm run tsc:build",
     "dev": "npm-run-all --parallel tsc:watch nodemon",
-    "test": "jest --coverage",
+    "test": "jest",
     "tsc:build": "tsc",
     "tsc:watch": "tsc --watch",
     "nodemon": "nodemon --watch dev --watch lib --watch src dev/dev.js",
+    "format": "prettier --check src/** dev/**",
+    "format:write": "prettier --write src/** dev/**",
     "prepublishOnly": "npm run build"
   },
   "author": "Yannick Deubel (https://github.com/yandeu)",
@@ -32,11 +34,12 @@
   "devDependencies": {
     "@types/jsdom": "^16.2.3",
     "@types/node": "^14.14.16",
+    "@yandeu/prettier-config": "^0.0.1",
     "jest": "^26.1.0",
     "nodemon": "^2.0.4",
     "npm-run-all": "^4.1.5",
     "phaser": "~3.24.1",
-    "typescript": "^4"
+    "typescript": "^4.2.4"
   },
   "directories": {
     "lib": "lib"
