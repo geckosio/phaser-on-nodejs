@@ -1,6 +1,6 @@
 {
   "name": "@geckos.io/phaser-on-nodejs",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Allows you to run Phaser 3 games (including Phaser's physics engines) on Node.js.",
   "main": "lib/index.js",
   "scripts": {
