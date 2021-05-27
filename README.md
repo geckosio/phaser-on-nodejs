@@ -16,11 +16,11 @@
 
 </div>
 
-## Important
+## Compatibility
 
-**Does not work with Phaser >= 3.50.0 yet!**
+Works with Phaser <3.50.0 and >=3.55.2.
 
-**Does work on Node.js 14.x and Node.js 16.x.**
+Works on Node.js 14.x and Node.js 16.x.
 
 ## Install
 
