@@ -18,10 +18,10 @@ it('player should collide with the tile map', done => {
       const map = this.make.tilemap({
         key: 'map',
         tileWidth: 32,
-        tileHeight: 32,
+        tileHeight: 32
       })
       const tileset = map.addTilesetImage('tiles')
-      const layer = map.createDynamicLayer('Level1', tileset)
+      const layer = map.createLayer('Level1', tileset)
 
       map.setCollision([20, 48])
 
