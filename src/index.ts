@@ -1,18 +1,5 @@
 declare global {
-  namespace NodeJS {
-    interface Global {
-      document: any
-      window: any
-      Image: any
-      navigator: any
-      XMLHttpRequest: any
-      HTMLCanvasElement: any
-      HTMLVideoElement: any
-      requestAnimationFrame: any
-      URL: any
-      phaserOnNodeFPS: number
-    }
-  }
+  var phaserOnNodeFPS: number
 }
 
 import Canvas from 'canvas'
@@ -26,15 +13,16 @@ const document = dom.window.document
 const window = dom.window
 window.focus = () => {}
 
-global.document = document
-global.window = window
-global.Image = Canvas.Image
-global.window.Element = undefined
-global.navigator = { userAgent: 'node' }
-global.XMLHttpRequest = FakeXMLHttpRequest
+global.document = document as any
+global.window = window as any
+global.window.Element = undefined as any
+global.navigator = { userAgent: 'node' } as any
+global.Image = Canvas.Image as any
+global.XMLHttpRequest = FakeXMLHttpRequest as any
 global.HTMLCanvasElement = window.HTMLCanvasElement
 global.HTMLVideoElement = window.HTMLVideoElement
 
+// @ts-ignore
 global.URL = () => {}
 global.URL.createObjectURL = (base64: any) => `data:image/png;base64,${base64}`
 global.URL.revokeObjectURL = () => {}
