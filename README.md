@@ -10,6 +10,7 @@
 
 [![Github Workflow](https://img.shields.io/github/workflow/status/geckosio/phaser-on-nodejs/CI/master?label=github%20build&logo=github&style=flat-square)](https://github.com/geckosio/phaser-on-nodejs/actions?query=workflow%3ACI)
 [![npm](https://img.shields.io/npm/v/@geckos.io/phaser-on-nodejs.svg?style=flat-square)](https://www.npmjs.com/package/@geckos.io/phaser-on-nodejs)
+[![Downloads](https://img.shields.io/npm/dm/@geckos.io/phaser-on-nodejs.svg?style=flat-square)](https://www.npmjs.com/package/@geckos.io/phaser-on-nodejs)
 [![NPM](https://img.shields.io/npm/l/@geckos.io/phaser-on-nodejs.svg?style=flat-square)](LICENSE)
 [![Codecov](https://img.shields.io/codecov/c/github/geckosio/phaser-on-nodejs?logo=codecov&style=flat-square)](https://codecov.io/gh/geckosio/phaser-on-nodejs)
 
