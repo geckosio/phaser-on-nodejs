@@ -29,12 +29,12 @@
   ],
   "dependencies": {
     "canvas": "^2.4.1",
-    "jsdom": "^16.3.0"
+    "jsdom": "^19.0.0"
   },
   "devDependencies": {
     "@types/jsdom": "^16.2.3",
     "@types/node": "^16.4.0",
-    "@yandeu/prettier-config": "^0.0.2",
+    "@yandeu/prettier-config": "^0.0.3",
     "axios": "^0.24.0",
     "jest": "^27.0.1",
     "node-fetch": "^2.6.6",
