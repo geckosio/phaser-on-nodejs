@@ -20,7 +20,7 @@
 
 Works with Phaser <3.50.0 and >=3.55.2.
 
-Works on Node.js 14.x and Node.js 16.x.
+Works on Node.js 14.x, 16.x and 17.x.
 
 ## Install
 
