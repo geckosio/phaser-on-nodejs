@@ -127,6 +127,24 @@ class Star extends Phaser.Physics.Arcade.Sprite {
 }
 ```
 
+## Using node-fetch or axios?
+
+If you are using **node-fetch**, you do not need to do anything.
+
+If you are using **axios**, you have to make sure `XMLHttpRequest` will not break:  
+`XMLHttpRequest` is only use in the browser. Phaser.js is a browsers framework which uses `XMLHttpRequest` so phaser-on-nodejs has to provide a mock implementation. Unfortunately, axios is a isomorphic framework. On initialization, axios checks if `XMLHttpRequest` is available and will think it is running in the browser. To make sure axios works on nodejs, we just have to hide `XMLHttpRequest` from axios during its initialization.
+See the snipped below to make it work:
+
+```js
+// remove fakeXMLHttpRequest
+const tmp = XMLHttpRequest
+XMLHttpRequest = undefined
+// init axios
+const axios = require('axios').default
+// restore fakeXMLHttpRequest
+XMLHttpRequest = tmp
+```
+
 ## Compatible Phaser versions
 
 For now, it has not been tested with Phaser 2, but it works well with Phaser 3.
