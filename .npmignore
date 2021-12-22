@@ -1,5 +1,9 @@
-assets
-coverage
-dev
-src
-test
+/*
+
+!/.npmrc
+!/LICENSE
+!/README.md
+!/bundles
+!/lib
+!/package.json
+!/readme
