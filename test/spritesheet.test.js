@@ -8,7 +8,7 @@ it('should multiply to 1536 (32*48)', done => {
     preload() {
       this.load.spritesheet('dude', '../assets/dude.png', {
         frameWidth: 32,
-        frameHeight: 48,
+        frameHeight: 48
       })
     }
 

@@ -1,6 +1,8 @@
 require('../lib/index')
 const { requestAnimationFrame, animationFrame } = require('../lib/index')
 
+jest.setTimeout(10_000)
+
 it('should create object URL', () => {
   expect(URL.createObjectURL('test')).toBe('data:image/png;base64,test')
 })

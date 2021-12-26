@@ -9,9 +9,9 @@ const StartGame = Scenes => {
     physics: {
       default: 'arcade',
       arcade: {
-        gravity: { y: 300 },
-      },
-    },
+        gravity: { y: 300 }
+      }
+    }
   }
 
   new Phaser.Game(config)

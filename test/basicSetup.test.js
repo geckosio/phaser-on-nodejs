@@ -25,14 +25,14 @@ it('should render at 30 fps (+-5 fps)', done => {
     audio: false,
     scene: [MainScene],
     fps: {
-      target: FPS,
+      target: FPS
     },
     physics: {
       default: 'arcade',
       arcade: {
-        gravity: { y: 300 },
-      },
-    },
+        gravity: { y: 300 }
+      }
+    }
   }
 
   new Phaser.Game(config)
