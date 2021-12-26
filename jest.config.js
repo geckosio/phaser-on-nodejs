@@ -3,5 +3,5 @@ module.exports = {
   forceExit: true,
   maxConcurrency: 1,
   maxWorkers: 1,
-  testTimeout: 10_000
+  testTimeout: 5_000
 }

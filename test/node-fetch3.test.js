@@ -2,23 +2,27 @@ require('../lib/index.js')
 require('./globalMock')
 const Phaser = require('phaser')
 const http = require('http')
-const fetch = require('node-fetch')
+let fetch
 
 let server
 const PORT = Math.floor(Math.random() * 50000 + 5000)
 
 beforeAll(done => {
-  const requestListener = function (req, res) {
-    if (req.url === '/hello') return res.writeHead(200).end('Hello!')
-    else return res.writeHead(404).end()
-  }
-  server = http.createServer(requestListener)
-  server.listen(PORT, () => {
-    done()
+  import('node-fetch3').then(pkg => {
+    fetch = pkg.default
+
+    const requestListener = function (req, res) {
+      if (req.url === '/hello') return res.writeHead(200).end('Hello!')
+      else return res.writeHead(404).end()
+    }
+    server = http.createServer(requestListener)
+    server.listen(PORT, () => {
+      done()
+    })
   })
 })
 
-it('should be able to use axios', done => {
+it('should be able to use node-fetch@3', done => {
   class MainScene extends Phaser.Scene {
     preload() {
       // load image (only possible of FakeXMLHttpRequest is available)
