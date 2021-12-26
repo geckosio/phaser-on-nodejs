@@ -8,6 +8,7 @@ import FakeXMLHttpRequest from './fakeXMLHttpRequest'
 
 const { JSDOM } = jsdom
 const dom = new JSDOM(`<!DOCTYPE html><body></body>`)
+const noop = () => {}
 
 const document = dom.window.document
 const window = dom.window
@@ -23,7 +24,7 @@ global.HTMLCanvasElement = window.HTMLCanvasElement
 global.HTMLVideoElement = window.HTMLVideoElement
 
 // @ts-ignore
-global.URL = () => {}
+global.URL = URL || noop
 global.URL.createObjectURL = (base64: any) => `data:image/png;base64,${base64}`
 global.URL.revokeObjectURL = () => {}
 
