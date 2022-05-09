@@ -16,6 +16,10 @@
 
 </div>
 
+## Arcade Physics
+
+If your goal is to run the Arcade Physics on the server, also have a look at [`arcade-physics`](https://github.com/yandeu/arcade-physics#readme).
+
 ## Compatibility
 
 Works with Phaser <3.50.0 and >=3.55.2.
