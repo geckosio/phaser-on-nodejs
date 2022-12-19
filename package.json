@@ -28,8 +28,8 @@
     "matter"
   ],
   "dependencies": {
-    "canvas": "^2.4.1",
-    "jsdom": "^19.0.0"
+    "canvas": "^2.10.2 ",
+    "jsdom": "^20.0.3"
   },
   "devDependencies": {
     "@types/jsdom": "^16.2.3",
