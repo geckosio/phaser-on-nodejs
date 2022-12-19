@@ -32,7 +32,7 @@
     "jsdom": "^20.0.3"
   },
   "devDependencies": {
-    "@types/jsdom": "^16.2.3",
+    "@types/jsdom": "^20.0.1",
     "@types/node": "^16.4.0",
     "@yandeu/prettier-config": "^0.0.3",
     "axios": "^0.24.0",
