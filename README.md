@@ -18,13 +18,13 @@
 
 ## Arcade Physics
 
-If your goal is to run the Arcade Physics on the server, also have a look at [`arcade-physics`](https://github.com/yandeu/arcade-physics#readme).
+⚠️ If your goal is to run the Arcade Physics on the server, I highly recommend using [`arcade-physics`](https://github.com/yandeu/arcade-physics#readme).
 
 ## Compatibility
 
 Works with Phaser <3.50.0 and >=3.55.2.
 
-Works on Node.js 14.x, 16.x and 17.x.
+Works on Node.js 14.x, 16.x, 17.x and 18.x.
 
 ## Install
 
