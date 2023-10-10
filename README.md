@@ -22,9 +22,10 @@
 
 ## Compatibility
 
-Works with Phaser <3.50.0 and >=3.55.2.
+Works with Phaser <3.50.0 and >=3.55.2.  
+_Successfully tested with v3.60.0_
 
-Works on Node.js 14.x, 16.x, 17.x and 18.x.
+Works on Node.js 16.x, 18.x and 20.x.
 
 ## Install
 
