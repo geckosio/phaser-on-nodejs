@@ -6,11 +6,11 @@
   "scripts": {
     "start": "npm run dev",
     "build": "npm run tsc:build",
-    "dev": "npm-run-all --parallel tsc:watch nodemon",
+    "dev": "npm-run-all --parallel tsc:watch dev:nodemon",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "tsc:build": "tsc",
     "tsc:watch": "tsc --watch",
-    "nodemon": "nodemon --watch dev --watch lib --watch src dev/dev.js",
+    "dev:nodemon": "nodemon --watch dev --watch lib --watch src dev/dev.js",
     "format": "prettier --check src/** dev/** test/**",
     "format:write": "prettier --write src/** dev/** test/**",
     "prepublishOnly": "npm run build"
@@ -42,7 +42,7 @@
     "node-fetch3": "npm:node-fetch@^3.1.0",
     "nodemon": "^2.0.4",
     "npm-run-all": "^4.1.5",
-    "phaser": "^3.55.2",
+    "phaser": "^3.60.0",
     "typescript": "^4.3.5"
   },
   "directories": {
