@@ -32,8 +32,9 @@ global.URL.revokeObjectURL = () => {}
 global.phaserOnNodeFPS = 60
 
 const animationFrame = (cb: any) => {
+  const now = performance.now()
   if (typeof cb !== 'function') return 0 // this line saves a lot of cpu
-  window.setTimeout(() => cb(0), 1000 / global.phaserOnNodeFPS)
+  window.setTimeout(() => cb(now), 1000 / global.phaserOnNodeFPS)
   return 0
 }
 export { animationFrame }
