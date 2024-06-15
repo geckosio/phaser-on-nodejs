@@ -22,7 +22,7 @@ it('should be able to use node-fetch@2', done => {
   class MainScene extends Phaser.Scene {
     preload() {
       // load image (only possible of FakeXMLHttpRequest is available)
-      this.load.image('star', '../assets/star.png')
+      this.load.image('star', './assets/star.png')
     }
     create() {
       fetch(`http://localhost:${PORT}/hello`)

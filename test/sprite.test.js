@@ -6,7 +6,7 @@ const StartTest = require('./startTest')
 it('should multiply to 528 (24*22)', done => {
   class MainScene extends Phaser.Scene {
     preload() {
-      this.load.image('star', '../assets/star.png')
+      this.load.image('star', './assets/star.png')
     }
 
     create() {

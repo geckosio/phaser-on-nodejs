@@ -107,7 +107,7 @@ You can load textures (images, spritesheets etc.) on the server.
 ```js
 preload() {
   // use a relative path
-  this.load.image('star', '../assets/star.png')
+  this.load.image('star', './assets/star.png')
 }
 
 create() {

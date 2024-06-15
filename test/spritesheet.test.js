@@ -6,7 +6,7 @@ const StartTest = require('./startTest')
 it('should multiply to 1536 (32*48)', done => {
   class MainScene extends Phaser.Scene {
     preload() {
-      this.load.spritesheet('dude', '../assets/dude.png', {
+      this.load.spritesheet('dude', './assets/dude.png', {
         frameWidth: 32,
         frameHeight: 48
       })

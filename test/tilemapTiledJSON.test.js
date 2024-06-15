@@ -10,8 +10,8 @@ const StartTest = require('./startTest')
 it('player should collide with the tile map', done => {
   class MainScene extends Phaser.Scene {
     preload() {
-      this.load.image('tiles', '../assets/gridtiles.png')
-      this.load.tilemapTiledJSON('map', '../assets/simple-map.json')
+      this.load.image('tiles', './assets/gridtiles.png')
+      this.load.tilemapTiledJSON('map', './assets/simple-map.json')
     }
 
     create() {
