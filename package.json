@@ -1,5 +1,5 @@
 {
-  "name": "@geckos.io/phaser-on-nodejs",
+  "name": "@uyd/phaser-on-nodejs",
   "version": "1.2.9",
   "description": "Allows you to run Phaser 3 games (including Phaser's physics engines) on Node.js.",
   "main": "lib/index.js",
@@ -15,7 +15,7 @@
     "format:write": "prettier --write src/** dev/** test/**",
     "prepublishOnly": "npm run build"
   },
-  "author": "Yannick Deubel (https://github.com/yandeu)",
+  "author": "Guy Davidson (forked from Yannick Deubel (https://github.com/yandeu))",
   "license": "MIT",
   "keywords": [
     "phaser",
@@ -50,13 +50,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/geckosio/phaser-on-nodejs.git"
+    "url": "git+https://github.com/guydav/phaser-on-nodejs.git"
   },
   "bugs": {
-    "url": "https://github.com/geckosio/phaser-on-nodejs/issues"
+    "url": "https://github.com/guydav/phaser-on-nodejs/issues"
   },
-  "homepage": "https://github.com/geckosio/phaser-on-nodejs#readme",
-  "funding": {
-    "url": "https://github.com/sponsors/yandeu"
-  }
+  "homepage": "https://github.com/guydav/phaser-on-nodejs#readme"
 }
