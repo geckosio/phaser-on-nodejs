@@ -1,5 +1,6 @@
 import path from 'path'
 import fs from 'fs'
+import process from 'process'
 
 class FakeXMLHttpRequest {
   public url: string
@@ -8,7 +9,7 @@ class FakeXMLHttpRequest {
   public responseText: string
 
   public open(_type: string, url: string) {
-    this.url = path.resolve(__dirname, url)
+    this.url = path.resolve(process.cwd(), url)
   }
 
   public send() {
