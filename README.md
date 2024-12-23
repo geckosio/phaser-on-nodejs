@@ -22,10 +22,8 @@
 
 ## Compatibility
 
-Works with Phaser <3.50.0 and >=3.55.2.  
-_Successfully tested with v3.60.0_
-
-Works on Node.js 16.x, 18.x and 20.x.
+Works with Phaser >=3.55.2.  
+_Successfully tested with v3.87.0_
 
 ## Install
 
@@ -149,7 +147,3 @@ const axios = require('axios').default
 // restore fakeXMLHttpRequest
 XMLHttpRequest = tmp
 ```
-
-## Compatible Phaser versions
-
-For now, it has not been tested with Phaser 2, but it works well with Phaser 3.
