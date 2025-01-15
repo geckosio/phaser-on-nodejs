@@ -5,6 +5,7 @@ declare global {
 import Canvas from 'canvas'
 import jsdom from 'jsdom'
 import FakeXMLHttpRequest from './fakeXMLHttpRequest'
+import './fakeScreen'
 
 const { JSDOM } = jsdom
 const dom = new JSDOM(`<!DOCTYPE html><body></body>`)

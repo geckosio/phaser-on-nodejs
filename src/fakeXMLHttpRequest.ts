@@ -3,10 +3,10 @@ import fs from 'fs'
 import process from 'process'
 
 class FakeXMLHttpRequest {
-  public url: string
+  public url!: string
   public status = 200
   public response: any
-  public responseText: string
+  public responseText: string | undefined
 
   public open(_type: string, url: string) {
     this.url = path.resolve(process.cwd(), url)
