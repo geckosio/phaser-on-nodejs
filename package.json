@@ -28,8 +28,8 @@
     "matter"
   ],
   "dependencies": {
-    "canvas": "^3.0.0",
-    "jsdom": "^25.0.1",
+    "canvas": "^3.1.1",
+    "jsdom": "^26.1.0",
     "phaser3spectorjs": "npm:empty-npm-package@1.0.0"
   },
   "devDependencies": {
