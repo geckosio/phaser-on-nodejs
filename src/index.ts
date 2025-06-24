@@ -18,7 +18,7 @@ window.focus = () => {}
 global.document = document as any
 global.window = window as any
 global.window.Element = undefined as any
-global.navigator = { userAgent: 'node' } as any
+global.navigator ??= { userAgent: 'node' } as any
 global.Image = Canvas.Image as any
 global.XMLHttpRequest = FakeXMLHttpRequest as any
 global.HTMLCanvasElement = window.HTMLCanvasElement
